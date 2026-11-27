@@ -1,0 +1,21 @@
+GALERIE — mode d'emploi
+=======================
+Ce dossier contient les photos ajoutées à la galerie du site.
+
+Pour ajouter des photos :
+1. Copiez vos photos dans CE dossier (formats .jpg, .png ou .webp ; 1600 px de large suffisent).
+2. Ouvrez le fichier photos.js avec VS Code ou le Bloc-notes.
+3. Ajoutez une ligne par photo, sur le modèle des lignes existantes :
+     { file: "ma-photo.jpg", cat: "2027", fr: "Description en français", en: "Description in English" },
+   - file : le nom exact de la photo
+   - cat  : la catégorie (une année ou un événement) : les boutons de filtre se créent tout seuls
+   - fr / en : la description affichée dans chaque langue
+4. Envoyez ce dossier « galerie » sur votre hébergeur (à la racine du site, avec index.html).
+
+Astuce : pour une photo qui n'est pas dans ce dossier, utilisez son chemin complet,
+par exemple  file: "img/j26-hall.webp"  (comme les photos déjà présentes).
+
+--------------------------------------------------------------
+GALLERY — how to
+Copy photos into this folder, add one line per photo in photos.js
+(file, cat, fr, en), then upload the folder. No rebuild is needed.
